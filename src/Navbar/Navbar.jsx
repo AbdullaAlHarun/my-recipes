@@ -1,10 +1,10 @@
-
+import './navbar.css';
 const Navbar = () => {
     return (
       
     //   navbar section 
-    <header>
-      <div className="navbar bg-base-100 flex justify-around">
+    <header className='ml-4 mr-4 lg:ml-32 lg:mr-32'>
+      <div className="navbar bg-base-100 ">
         {/* Navbar Start */}
         <div className="navbar-start">
           {/* Dropdown for Mobile */}
@@ -19,6 +19,7 @@ const Navbar = () => {
               <li><a>Home</a></li>
               <li><a>Recepies</a></li>
               <li><a>About</a></li>
+              <li><a>Search</a></li>
             </ul>
           </div>
           {/* Logo */}
@@ -26,16 +27,17 @@ const Navbar = () => {
         </div>
         
         {/* Navbar Center (Hidden on small screens) */}
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex text-center">
           <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
+                <li><a>Home</a></li>
               <li><a>Recepies</a></li>
               <li><a>About</a></li>
+              <li><a>Search</a></li>
           </ul>
         </div>
   
         {/* Navbar End */}
-        <div className="flex-none gap-2">
+        <div className="navbar-end flex-none gap-2">
           <div className="form-control">
             <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
           </div>
@@ -50,22 +52,24 @@ const Navbar = () => {
         </div>
       </div>
     
-      <div className="hero h-[550px] rounded-3xl mt-7 hero-background" style={{ backgroundImage: "url(../assets/bg.png)" }}>
-      <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-[600px]">
-          <h1 className="mb-5 text-5xl font-extrabold text-[#fff]">End-to-End Travel with</h1>
-          <h1 className="mb-5 text-4xl font-extrabold text-[#1DD100]">Flixbus</h1>
-          <p className="mb-5 font-bold">
-            Journey Beyond Expectations: Your Ride, Your Way!
-            Seamless Travel, Boundless Adventure - Book Your Bus Ticket Today!
-          </p>
-          <button className="btn bg-[#1DD100] border-0">
-            <a href="#buy-ticket">Buy Ticket</a>
-          </button>
+      <div className="hero h-[550px] rounded-3xl mt-7 hero-background p-8">
+            <div className="hero-content text-center text-neutral-content">
+                <div className="max-w-[600px]">
+                <h1 className="mb-5 text-3xl lg:text-5xl font-extrabold text-[#fff]">Discover an exceptional cooking class tailored for you!</h1>
+                <p className="mb-5">
+                Dive into a world of culinary delights with our customized cooking classes, crafted to suit your taste and skill level. Unlock your culinary potential and embark on an unforgettable gastronomic adventure.
+                </p>
+                <div className="flex gap-4 text-center justify-center">
+                <button className="btn bg-[#0BE58A] border-0 rounded-full">
+                    <a href="#buy-ticket">Explore Now</a>
+                </button>
+                <button className="btn btn-outline rounded-full border-[#fff]">
+                    <a className='text-[#fff]' href="#buy-ticket">Our Feedback</a>
+                </button>
+                </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-      
      </header> 
     );
   };
