@@ -105,7 +105,7 @@ const Recepies = () => {
 
                     </div>
 
-                    {/* <div>
+                    <div>
                         <h2 className="text-2xl font-bold md:text-base">Currently cooking: {currentlyCookingRecipes.length}</h2>
                         <table>
                             <thead>
@@ -129,7 +129,7 @@ const Recepies = () => {
                     <div className="mt-8">
                         <p>Total Preparation Time: {totalPreparationTime} min</p>
                         <p>Total Calories: {totalCalories} calories</p>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
