@@ -14,16 +14,18 @@ const recepie = ({recepie, onAddToCook }) => {
                     <hr className="border-2"></hr>
 
                     <h2 className="font-bold">Ingredients: {recepie.ingredients.length}</h2>
-                    <ul>
+                    <ul className="list-disc list-inside">
                         {recepie.ingredients.map((ingredient, index) => (
-                        <li key={index}>{ingredient}</li>
+                            <li key={index} className="text-left">{ingredient}</li>
                         ))}
                     </ul>
                     <div className="flex justify-between gap-8 font-semibold">
                         <p>
+                        <i className="fa-solid fa-clock mr-2"></i>
                         {recepie.preparing_time}
                         </p>
                         <p>
+                        <i className="fa-solid fa-fire mr-2"></i>
                          {recepie.calories}
                         </p>
                     </div>

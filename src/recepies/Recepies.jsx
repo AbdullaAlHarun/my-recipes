@@ -68,23 +68,23 @@ const Recepies = () => {
                 </div>
  
                
-                <div className="w-full md:w-2/5 p-8 mb-8 bg-gray-300 rounded-xl">
+                <div className="w-full md:w-2/5 p-8 mb-8 border-2 rounded-xl">
                     <div className="w-full">
-                    <h2 className="text-2xl font-bold md:text-base">Want to cook: {selectedRecipes.length}</h2>
+                    <h2 className="text-3xl font-bold border-b-2">Want to cook: {selectedRecipes.length}</h2>
                     </div>
-                    <div className="flex justify-around gap-8 font-bold">
+                    <div>
                         <table>
                             <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Time</th>
-                                    <th>Calories</th>
-                                    <th>Actions</th>
-                                </tr>
+                            <tr>
+                                <th className="px-4 py-2 text-center w-1/4">Name</th>
+                                <th className="px-4 py-2 text-center w-1/4">Time</th>
+                                <th className="px-4 py-2 text-center w-1/4">Calories</th>
+                                <th className="px-4 py-2 text-center w-1/4"></th>
+                            </tr>
                             </thead>
-                            <tbody>
+                            <tbody >
                                 {selectedRecipes.map(recipe => (
-                                    <tr key={recipe.recipe_id}>
+                                    <tr className="bg-[#dcdcff]" key={recipe.recipe_id}>
                                         <td>{recipe.recipe_name}</td>
                                         <td>{recipe.preparing_time}</td>
                                         <td>{recipe.calories}</td>
@@ -97,7 +97,7 @@ const Recepies = () => {
                         </table>
                         {/* Display toast message */}
                         {toastVisible && (
-                            <div className="toast text-[red] font-bold">
+                            <div className="toast text-[red] font-bold text-3xl">
                                 <p>You have already selected this recipe!</p>
                             </div>
                         )}
@@ -106,18 +106,18 @@ const Recepies = () => {
                     </div>
 
                     <div>
-                        <h2 className="text-2xl font-bold md:text-base">Currently cooking: {currentlyCookingRecipes.length}</h2>
+                        <h2 className="text-3xl font-bold border-b-2">Currently cooking: {currentlyCookingRecipes.length}</h2>
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Time</th>
-                                    <th>Calories</th>
+                                <th className="px-4 py-2 text-center w-1/4">Name</th>
+                                <th className="px-4 py-2 text-center w-1/4">Time</th>
+                                <th className="px-4 py-2 text-center w-1/4">Calories</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {currentlyCookingRecipes.map(recipe => (
-                                    <tr key={recipe.recipe_id}>
+                                    <tr className="bg-[#dcdcff]" key={recipe.recipe_id}>
                                         <td>{recipe.recipe_name}</td>
                                         <td>{recipe.preparing_time}</td>
                                         <td>{recipe.calories}</td>
@@ -127,8 +127,8 @@ const Recepies = () => {
                         </table> 
                     </div>
                     <div className="mt-8">
-                        <p>Total Preparation Time: {totalPreparationTime} min</p>
-                        <p>Total Calories: {totalCalories} calories</p>
+                        <p><span className='font-bold'>Total Preparation Time:</span> {totalPreparationTime} min</p>
+                        <p><span className='font-bold'>Total Calories:</span> {totalCalories} calories</p>
                     </div>
                 </div>
             </div>
