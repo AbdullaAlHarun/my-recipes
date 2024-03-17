@@ -53,7 +53,7 @@ const Recepies = () => {
            </div>
 
          
-           <div className="recepies-container gap-8 flex flex-col md:flex-row justify-between text-center">
+           <div className="recepies-container gap-12 flex flex-col md:flex-row justify-between text-center">
               
                 <div id="recepies-container" className="w-full md:w-3/5 mb-8 md:mb-0 gap-8 flex flex-wrap justify-between text-center">
                     {
@@ -62,6 +62,7 @@ const Recepies = () => {
                         recepie={recepie} 
                         key={recepie.recipe_id}
                         onAddToCook={() => handleAddToCook(recepie)} 
+                        className="flex-1"
                         ></Recepie>
                              
                     )}
@@ -76,6 +77,7 @@ const Recepies = () => {
                         <table>
                             <thead>
                             <tr>
+                                <th className="px-4 py-2 text-center w-1/4"></th>
                                 <th className="px-4 py-2 text-center w-1/4">Name</th>
                                 <th className="px-4 py-2 text-center w-1/4">Time</th>
                                 <th className="px-4 py-2 text-center w-1/4">Calories</th>
@@ -83,16 +85,17 @@ const Recepies = () => {
                             </tr>
                             </thead>
                             <tbody >
-                                {selectedRecipes.map(recipe => (
-                                    <tr className="bg-[#dcdcff]" key={recipe.recipe_id}>
-                                        <td>{recipe.recipe_name}</td>
-                                        <td>{recipe.preparing_time}</td>
-                                        <td>{recipe.calories}</td>
-                                        <td>
-                                            <button className='btn btn-primary' onClick={() => handlePrepare(recipe)}>Preparing</button>
-                                        </td>
-                                    </tr>
-                                ))}
+                            {selectedRecipes.map((recipe, index) => (
+                                <tr className="bg-[#dcdcff]" key={recipe.recipe_id}>
+                                    <td>{index + 1}</td>
+                                    <td>{recipe.recipe_name}</td>
+                                    <td>{recipe.preparing_time}</td>
+                                    <td>{recipe.calories}</td>
+                                    <td className='p-4'>
+                                        <button className="btn bg-[#0BE58A] border-0 rounded-full" onClick={() => handlePrepare(recipe)}>Preparing</button>
+                                    </td>
+                                </tr>
+                            ))}
                             </tbody>
                         </table>
                         {/* Display toast message */}
@@ -110,14 +113,16 @@ const Recepies = () => {
                         <table>
                             <thead>
                                 <tr>
+                                <th className="px-4 py-2 text-center w-1/4"></th>
                                 <th className="px-4 py-2 text-center w-1/4">Name</th>
                                 <th className="px-4 py-2 text-center w-1/4">Time</th>
                                 <th className="px-4 py-2 text-center w-1/4">Calories</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {currentlyCookingRecipes.map(recipe => (
-                                    <tr className="bg-[#dcdcff]" key={recipe.recipe_id}>
+                                {currentlyCookingRecipes.map((recipe, index) => (
+                                    <tr className="bg-[#dcdcff] p-y-4" key={recipe.recipe_id}>
+                                        <td>{index + 1}</td>
                                         <td>{recipe.recipe_name}</td>
                                         <td>{recipe.preparing_time}</td>
                                         <td>{recipe.calories}</td>
@@ -126,9 +131,9 @@ const Recepies = () => {
                             </tbody>
                         </table> 
                     </div>
-                    <div className="mt-8">
-                        <p><span className='font-bold'>Total Preparation Time:</span> {totalPreparationTime} min</p>
-                        <p><span className='font-bold'>Total Calories:</span> {totalCalories} calories</p>
+                    <div className="mt-8 flex justify-end gap-4">
+                        <p><span className='font-bold'>Total Time =<br></br></span> {totalPreparationTime} min</p>
+                        <p><span className='font-bold'>Total Calories =<br></br></span> {totalCalories} calories</p>
                     </div>
                 </div>
             </div>

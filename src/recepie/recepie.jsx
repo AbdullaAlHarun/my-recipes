@@ -4,9 +4,9 @@ const recepie = ({recepie, onAddToCook }) => {
    
     return (
         <div>
-             <div className="card w-96 bg-base-100 shadow-2xl border-gray-200">
+             <div className="card w-96 bg-base-100 shadow-2xl border-gray-200 border-2">
                 <figure className="px-10 pt-10 rounded-lg">
-                    <img src={recepie.recipe_image} />
+                    <img className="rounded-lg" src={recepie.recipe_image} />
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{recepie.recipe_name}</h2>
@@ -14,7 +14,7 @@ const recepie = ({recepie, onAddToCook }) => {
                     <hr className="border-2"></hr>
 
                     <h2 className="font-bold">Ingredients: {recepie.ingredients.length}</h2>
-                    <ul className="list-disc list-inside">
+                    <ul className="list-disc list-inside border-y-2">
                         {recepie.ingredients.map((ingredient, index) => (
                             <li key={index} className="text-left">{ingredient}</li>
                         ))}
