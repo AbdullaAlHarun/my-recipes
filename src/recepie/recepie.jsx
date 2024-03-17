@@ -1,0 +1,42 @@
+
+
+const recepie = ({recepie, onAddToCook }) => {
+   
+    return (
+        <div>
+             <div className="card w-96 bg-base-100 shadow-2xl border-gray-200">
+                <figure className="px-10 pt-10 rounded-lg">
+                    <img src={recepie.recipe_image} />
+                </figure>
+                <div className="card-body items-center text-center">
+                    <h2 className="card-title">{recepie.recipe_name}</h2>
+                    <p>{recepie.short_description}</p>
+                    <hr className="border-2"></hr>
+
+                    <h2 className="font-bold">Ingredients: {recepie.ingredients.length}</h2>
+                    <ul>
+                        {recepie.ingredients.map((ingredient, index) => (
+                        <li key={index}>{ingredient}</li>
+                        ))}
+                    </ul>
+                    <div className="flex justify-between gap-8 font-semibold">
+                        <p>
+                        {recepie.preparing_time}
+                        </p>
+                        <p>
+                         {recepie.calories}
+                        </p>
+                    </div>
+                    <div>
+
+                    <button className="btn bg-[#0BE58A] border-0 rounded-full" onClick={() => onAddToCook(recepie)}>
+                        Want to Cook
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default recepie;

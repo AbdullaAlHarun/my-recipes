@@ -1,58 +1,56 @@
-{
-    "recipes": [
-      {
-        "recipe_id": 1,
-        "recipe_name": "Spicy Chicken Stir-Fry",
-        "short_description": "A fiery stir-fry with tender chicken and vegetables.",
-        "ingredients": ["550 g chicken breast", "120 ml soy sauce", "200 g basil leaves", "400 g mushrooms", "3 cloves garlic", "1 red chili pepper"],
-        "preparing_time": "30 min",
-        "calories": "320 calories",
-        "recipe_image": "https://www.kitchensanctuary.com/wp-content/uploads/2016/03/Quick-Chicken-Stir-Fry-square-FS.jpg"
-      },
-      {
-        "recipe_id": 2,
-        "recipe_name": "Vegetable Curry",
-        "short_description": "A comforting and aromatic curry filled with assorted vegetables.",
-        "ingredients": ["300 g mixed vegetables (carrots, potatoes, peas)", "200 ml coconut milk", "2 tbsp curry powder", "1 onion", "2 cloves garlic", "1 tsp ginger"],
-        "preparing_time": "40 min",
-        "calories": "250 calories",
-        "recipe_image": "https://images.immediate.co.uk/production/volatile/sites/30/2022/06/Courgette-curry-c295fa0.jpg"
-      },
-      {
-        "recipe_id": 3,
-        "recipe_name": "Mediterranean Pasta Salad",
-        "short_description": "A refreshing pasta salad with Mediterranean flavors.",
-        "ingredients": ["250 g pasta", "100 g cherry tomatoes", "1 cucumber", "100 g feta cheese", "1/4 cup olives", "2 tbsp olive oil"],
-        "preparing_time": "20 min",
-        "calories": "280 calories",
-        "recipe_image": "https://veganhuggs.com/wp-content/uploads/2021/05/vegan-mediterranean-pasta-salad-square-crop.jpg"
-      },
-      {
-        "recipe_id": 4,
-        "recipe_name": "Teriyaki Salmon",
-        "short_description": "Delicious glazed salmon cooked to perfection.",
-        "ingredients": ["4 salmon fillets", "80 ml teriyaki sauce", "2 tbsp honey", "1 tbsp sesame seeds", "1 tsp ginger", "2 cloves garlic"],
-        "preparing_time": "25 min",
-        "calories": "350 calories",
-        "recipe_image": "https://www.mygfguide.com/wp-content/uploads/2020/01/00000IMG_00000_BURST20200131133521757_COVER-735x551.jpg"
-      },
-      {
-        "recipe_id": 5,
-        "recipe_name": "Caprese Salad",
-        "short_description": "A classic Italian salad with fresh tomatoes, mozzarella, and basil.",
-        "ingredients": ["2 large tomatoes", "200 g fresh mozzarella", "1/4 cup fresh basil leaves", "2 tbsp balsamic glaze", "1 tbsp olive oil", "Salt and pepper to taste"],
-        "preparing_time": "15 min",
-        "calories": "200 calories",
-        "recipe_image": "https://whatsgabycooking.com/wp-content/uploads/2023/06/Dinner-Party-__-Traditional-Caprese-1-1200x800-1.jpg"
-      },
-      {
-        "recipe_id": 6,
-        "recipe_name": "Veggie Stir-Fry",
-        "short_description": "Quick and healthy stir-fry loaded with colorful vegetables.",
-        "ingredients": ["300 g mixed vegetables (bell peppers, broccoli, carrots)", "120 ml soy sauce", "2 tbsp sesame oil", "2 cloves garlic", "1 tsp ginger", "1 tbsp cornstarch"],
-        "preparing_time": "35 min",
-        "calories": "180 calories",
-        "recipe_image": "https://www.thecookierookie.com/wp-content/uploads/2023/02/featured-vegetable-stir-fry-recipe.jpg"
-      }
-    ]
-  }
+ [
+    {
+      "recipe_id": 1,
+      "recipe_name": "Spicy Chicken Stir-Fry",
+      "short_description": "A fiery stir-fry with tender chicken and vegetables.",
+      "ingredients": ["550 g chicken breast", "120 ml soy sauce", "200 g basil leaves", "3 cloves garlic", "1 red chili pepper"],
+      "preparing_time": "30 min",
+      "calories": "320 calories",
+      "recipe_image": "https://www.kitchensanctuary.com/wp-content/uploads/2016/03/Quick-Chicken-Stir-Fry-square-FS.jpg"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Vegetable Curry",
+      "short_description": "A comforting and aromatic curry filled with assorted vegetables.",
+      "ingredients": ["300 g mixed vegetables (carrots, potatoes, peas)", "200 ml coconut milk", "2 tbsp curry powder", "1 onion", "2 cloves garlic", "1 tsp ginger"],
+      "preparing_time": "40 min",
+      "calories": "250 calories",
+      "recipe_image": "https://images.immediate.co.uk/production/volatile/sites/30/2022/06/Courgette-curry-c295fa0.jpg"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Mediterranean Pasta Salad",
+      "short_description": "A refreshing pasta salad with Mediterranean flavors.",
+      "ingredients": ["250 g pasta", "100 g cherry tomatoes", "1 cucumber", "100 g feta cheese", "1/4 cup olives"],
+      "preparing_time": "20 min",
+      "calories": "280 calories",
+      "recipe_image": "https://veganhuggs.com/wp-content/uploads/2021/05/vegan-mediterranean-pasta-salad-square-crop.jpg"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Teriyaki Salmon",
+      "short_description": "Delicious glazed salmon cooked to perfection.",
+      "ingredients": ["4 salmon fillets", "80 ml teriyaki sauce", "2 tbsp honey", "1 tbsp sesame seeds"],
+      "preparing_time": "25 min",
+      "calories": "350 calories",
+      "recipe_image": "https://www.mygfguide.com/wp-content/uploads/2020/01/00000IMG_00000_BURST20200131133521757_COVER-735x551.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Caprese Salad",
+      "short_description": "A classic Italian salad with fresh tomatoes, mozzarella, and basil.",
+      "ingredients": ["2 large tomatoes", "200 g fresh mozzarella", "1/4 cup fresh basil leaves", "2 tbsp balsamic glaze", "1 tbsp olive oil", "Salt and pepper to taste"],
+      "preparing_time": "15 min",
+      "calories": "200 calories",
+      "recipe_image": "https://whatsgabycooking.com/wp-content/uploads/2023/06/Dinner-Party-__-Traditional-Caprese-1-1200x800-1.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Veggie Stir-Fry",
+      "short_description": "Quick and healthy stir-fry loaded with colorful vegetables.",
+      "ingredients": ["300 g mixed vegetables (bell peppers, broccoli, carrots)", "120 ml soy sauce", "2 tbsp sesame oil", "2 cloves garlic", "1 tsp ginger", "1 tbsp cornstarch"],
+      "preparing_time": "35 min",
+      "calories": "180 calories",
+      "recipe_image": "https://www.thecookierookie.com/wp-content/uploads/2023/02/featured-vegetable-stir-fry-recipe.jpg"
+    }
+  ]
