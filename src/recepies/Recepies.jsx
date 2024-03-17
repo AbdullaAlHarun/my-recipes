@@ -8,8 +8,8 @@ const Recepies = () => {
     const [selectedRecipes, setSelectedRecipes] = useState([]);
     const [currentlyCookingRecipes, setCurrentlyCookingRecipes] = useState([]);
     const [toastVisible, setToastVisible] = useState(false);
-    // const [totalPreparationTime, setTotalPreparationTime] = useState(0);
-    // const [totalCalories, setTotalCalories] = useState(0);
+    const [totalPreparationTime, setTotalPreparationTime] = useState(0);
+    const [totalCalories, setTotalCalories] = useState(0);
 
     useEffect(()=>{
         fetch("/recipes.json")
@@ -22,8 +22,8 @@ const Recepies = () => {
     const handleAddToCook = (recepie) => {
         if (!selectedRecipes.find(selectedRecipe => selectedRecipe.recipe_id === recepie.recipe_id)) {
             setSelectedRecipes([...selectedRecipes, recepie]);
-            // setTotalPreparationTime(totalPreparationTime + parseInt(recepie.preparing_time));
-            // setTotalCalories(totalCalories + parseInt(recepie.calories));
+            setTotalPreparationTime(totalPreparationTime + parseInt(recepie.preparing_time));
+            setTotalCalories(totalCalories + parseInt(recepie.calories));
         } else {
             setToastVisible(true);
             setTimeout(() => {
@@ -97,7 +97,7 @@ const Recepies = () => {
                         </table>
                         {/* Display toast message */}
                         {toastVisible && (
-                            <div className="toast">
+                            <div className="toast text-[red] font-bold">
                                 <p>You have already selected this recipe!</p>
                             </div>
                         )}
