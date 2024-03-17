@@ -53,7 +53,7 @@ const Recepies = () => {
            </div>
 
          
-           <div className="recepies-container gap-12 flex flex-col md:flex-row justify-between text-center">
+           <div className="recepies-container gap-4 flex flex-col md:flex-row justify-between text-center">
               
                 <div id="recepies-container" className="w-full md:w-3/5 mb-8 md:mb-0 gap-8 flex flex-wrap justify-between text-center">
                     {

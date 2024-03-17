@@ -4,7 +4,7 @@ const recepie = ({recepie, onAddToCook }) => {
    
     return (
         <div>
-             <div className="card w-96 bg-base-100 shadow-2xl border-gray-200 border-2">
+             <div className="card w-[350px] bg-base-100 shadow-2xl border-gray-200 border-2">
                 <figure className="px-10 pt-10 rounded-lg">
                     <img className="rounded-lg" src={recepie.recipe_image} />
                 </figure>
@@ -19,7 +19,7 @@ const recepie = ({recepie, onAddToCook }) => {
                             <li key={index} className="text-left">{ingredient}</li>
                         ))}
                     </ul>
-                    <div className="flex justify-between gap-8 font-semibold">
+                    <div className="flex justify-around gap-8 font-semibold">
                         <p>
                         <i className="fa-solid fa-clock mr-2"></i>
                         {recepie.preparing_time}
